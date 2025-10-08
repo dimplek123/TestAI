@@ -1,0 +1,37 @@
+{
+  "name": "saucedemo-automation",
+  "version": "1.0.0",
+  "description": "Complete E2E test automation framework for Saucedemo using Playwright with Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "report": "playwright show-report",
+    "install:playwright": "playwright install",
+    "clean": "rm -rf screenshots/* reports/* playwright-report/*"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "page-object-model",
+    "saucedemo"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@types/papaparse": "^5.3.14",
+    "papaparse": "^5.4.1"
+  }
+}
